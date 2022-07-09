@@ -4,8 +4,8 @@ function App() {
   return (
     <div className="App">
       <Modal />
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
+      <h1 className="text-3xl font-bold my-10">
+        MODAL COMPONENT
       </h1>
     </div>
   );
