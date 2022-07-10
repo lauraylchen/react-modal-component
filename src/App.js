@@ -2,11 +2,11 @@ import Modal from "./components/Modal";
 
 function App() {
   return (
-    <div className="App">
-      <Modal />
-      <h1 className="text-3xl font-bold my-10">
+    <div className="text-center h-screen">
+      <h1 className="text-3xl font-bold py-10">
         MODAL COMPONENT
       </h1>
+      <Modal />
     </div>
   );
 }
