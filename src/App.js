@@ -2,7 +2,7 @@ import { useState } from "react";
 import Modal from "./components/Modal";
 
 function App() {
-  const [showModal, setShowModal] = useState(true)
+  const [showModal, setShowModal] = useState(false)
 
   const handleClose = () => {
     setShowModal(false)
@@ -15,8 +15,11 @@ function App() {
       </h1>
       {showModal && <Modal handleClose = {handleClose}>
         <h2 className="text-2xl font-bold pb-3">10% Off Coupon Code!</h2>
-        <p className="italic">Use the code <strong className="not-italic">NINJA10</strong> at the checkout.</p>
+        <p className="italic">Use the code <strong className="not-italic text-primary">NINJA10</strong> at the checkout.</p>
       </Modal>}
+      <div>
+        <button className="btn btn-primary" onClick={() => {setShowModal(true)}}>Show Modal</button>
+      </div>
     </div>
   );
 }
